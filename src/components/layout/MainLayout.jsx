@@ -1,6 +1,7 @@
 import { Outlet } from 'react-router-dom';
 import Navbar from './Navbar';
 import Footer from './Footer';
+import ServerStatus from '../ui/ServerStatus';
 import { motion } from 'framer-motion';
 
 export default function MainLayout() {
@@ -19,6 +20,7 @@ export default function MainLayout() {
         <Outlet />
       </main>
       
+      <ServerStatus />
       <Footer />
     </div>
   );
